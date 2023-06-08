@@ -1,0 +1,10 @@
+.border {
+    text-align: left;
+}
+
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}

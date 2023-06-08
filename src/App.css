@@ -1,0 +1,28 @@
+.border-box {
+    border-color: white;
+    border-style: solid;
+    background-color: white;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 10px 10px grey;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.display-form {
+    margin: auto;
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px grey;
+    background-color: white;
+
+}
