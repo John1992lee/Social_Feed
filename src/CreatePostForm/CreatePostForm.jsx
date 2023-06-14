@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './AddEntry.css';
+import './CreatePostForm.css';
 
 
-const AddEntryForm = (props) => {
+const CreatePostForm = (props) => {
 
     const [name, setName] = useState('');
     const [post, setPost] = useState('');
@@ -29,11 +29,11 @@ const AddEntryForm = (props) => {
                 <label for='post' class="col-sm-2 col-form-label">Post</label>
                 <div class="col-sm-10">
                     <textarea type="post" value={post} style={{'height': '100px'}} onChange={(event) => setPost(event.target.value)}/>
-                    <button type='submit' class='btn btn-primary btn-lg float-end btn-sm' style={{'margin-top': '1em'}}>Create</button>
+                    <button type='submit' class='btn btn-primary btn-lg float-end btn-sm' style={{'margin-top': '1em'}}>Post</button>
                 </div>
             </div>
         </form>
      );
 }
  
-export default AddEntryForm;
+export default CreatePostForm;

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import DisplayEntries from './DisplayEntries/DisplayEntries';
-import AddEntryForm from './AddEntry/AddEntryForm';
+import CreatePostForm from './CreatePostForm/CreatePostForm';
+import NavBar from './NavBar/NavBar';
 import './App.css';
+import Post from './Post/Post';
 
 
 function App() {
@@ -15,15 +16,15 @@ function App() {
   return (
     <div>
       <div className='border-box'>
-        <h3 style={{margin: '1em'}}>Social<span style={{color: 'grey'}}>Feed</span></h3>
+        <NavBar />
       </div>
       <br></br>
       <div class='container' className='center'>
-        <AddEntryForm addNewEntryProps={addNewEntry}/>
+        <CreatePostForm addNewEntryProps={addNewEntry}/>
       </div>
       <br></br>
       <div class='container' className='display-form'>
-        <DisplayEntries parentEntries={entries} />
+        <Post parentEntries={entries} />
       </div>
       <br></br>
     </div>

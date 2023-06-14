@@ -1,21 +1,29 @@
 import OnClick from '../OnClickButton/OnClick';
 import DislikeButton from '../DislikeButton/DislikeButton';
+import './Post.css'
 
 
-const DisplayEntries = (props) => {
+const Post = (props) => {
     return ( 
         <table>
             {props.parentEntries.map((entry) => {
                 return (
                         <div>
                             <div>
-                                <td>{entry.name}</td>
+                                <h6>{entry.name}</h6>
                             </div>
                             <div>
                                 <td>{entry.post}</td>
                             </div>
-                            <OnClick message='Like'/>
-                            <DislikeButton message='Dislike'/>
+                            <div class='butn' align='right'>
+                                <div>
+                                    <OnClick message='Like'/>
+                                </div>
+                                <div>
+                                    <DislikeButton message='Dislike'/>
+                                </div>
+                            </div>
+                            <br />
                             <hr />
                         </div>
                 );
@@ -24,4 +32,4 @@ const DisplayEntries = (props) => {
      );
 }
  
-export default DisplayEntries;
+export default Post;
