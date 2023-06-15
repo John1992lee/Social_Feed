@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import CreatePostForm from './CreatePostForm/CreatePostForm';
 import NavBar from './NavBar/NavBar';
 import './App.css';
-import Post from './Post/Post';
-
+import PostList from './PostList/PostList';
 
 function App() {
   const [entries, setEntries] = useState([])
@@ -23,8 +22,8 @@ function App() {
         <CreatePostForm addNewEntryProps={addNewEntry}/>
       </div>
       <br></br>
-      <div class='container' className='display-form'>
-        <Post parentEntries={entries} />
+      <div>
+        <PostList newPost={entries}/>
       </div>
       <br></br>
     </div>
